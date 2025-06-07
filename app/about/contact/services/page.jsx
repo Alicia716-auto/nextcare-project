@@ -15,7 +15,7 @@ const page = () =>  {
 
     return(
         <div>
-            <section className="bg-amber-950 h-58 w-full ">
+            <section className="bg-amber-950 h-80 w-full ">
                 <p className="text-white text-2xl font-extralight p-3 md:text-center">Shop with us today</p>
                 <h1 className="text-white text-4xl font-bold p-3 md:text-center ">The story behind, our<br/> beautyness center</h1>
                  <div className=" font-bold   p-4 md:text-center ">

@@ -33,9 +33,9 @@ const Navbar = () => {
     },[isOpen])
   return (
     <div>
-    <nav className="bg-[#4E7A8E] h-15 w-full">
+    <nav className="bg-[#4E7A8E] h-20 w-full">
         <div className="flex items-center justify-between p-2 ">
-            <h1 className=" text-xl font-serif">Code By riven</h1>
+            <h1 className=" text-sm font-serif">@Codebyriven</h1>
               {!isOpen &&  (
                 <div onClick={toggleMenu} className="cursor-pointer md:hidden">
                     <HiMenu size={30} />
@@ -52,8 +52,8 @@ const Navbar = () => {
                  <Link href="/about/contact/services" className="text-2xl font-bold hover:text-green-100">Services</Link>
                   <Link href="/about/contact/services/portfolio" className="text-2xl font-bold hover:text-green-100">Portfolio</Link>
                    <Link href="/about/contact" className="text-2xl font-bold hover:text-green-100">Contact</Link>
-                     <button className="text-xl bg-blue-500 font-bold rounded  px-6 py-2">Sign in</button>
-                <button className="text-xl bg-blue-500 font-bold rounded  px-6 py-2">Sign Up</button>
+                     <button className="text-sm bg-blue-500 font-bold rounded  px-4 py-2">Sign in</button>
+                <button className="text-sm bg-blue-500 font-bold rounded  px-4 py-2">Sign Up</button>
 
                 </div>
 
@@ -71,8 +71,8 @@ const Navbar = () => {
                    <Link className="text-xl font-extralight font-sans" href="/about/contact">Contact</Link>
             </ul>
             <div className="space-x-4 font-bold flex space-between justify-end text-left pr-10 ">
-                <button className="bg-[#D6CFe0] rounded-md py-2 px-5">Sign up</button>
-                 <button className="bg-[#D6CFE0] rounded-md py-2 px-5">Login</button>
+                <button className="bg-[#D6CFe0] rounded-md py-2 m-2 px-4">Sign up</button>
+                 <button className="bg-[#D6CFE0] rounded-md m-2 py-2 px-4">Login</button>
             </div>
         </div>
     </nav>
