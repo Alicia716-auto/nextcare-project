@@ -60,7 +60,7 @@ const page = () =>  {
                                 
                             </div>
             </div>
-            <footer className='bg-[#5317A6] px-4 md:px-16 lg:px-28'>
+            <footer className='bg-[#5317A6] px-4 md:px-16 lg:px-28 w-full'>
                                       <div className='grid grid-cols-1  md:grid-cols-3 gap-7'>
                                       <div>
                                         <h2 className='text-xl text-black underline font-bold'>About us</h2>

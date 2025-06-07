@@ -15,14 +15,14 @@ const page = () =>  {
 
     return(
         <div>
-            <section className="bg-amber-950 h-58 ">
+            <section className="bg-amber-950 h-58 w-full ">
                 <p className="text-white text-2xl font-extralight p-3 md:text-center">Shop with us today</p>
                 <h1 className="text-white text-4xl font-bold p-3 md:text-center ">The story behind, our<br/> beautyness center</h1>
                  <div className=" font-bold   p-4 md:text-center ">
                  <button className="bg-[#D6CFE0] rounded-md py-2 px-5 w-40">Shop Now</button>
             </div>
             </section>
-            <section className="bg-[#F4F1F8] p-5 ">
+            <section className="bg-[#F4F1F8] p-5 w-full ">
                 <p className="text-black text-2xl font-extralight p-3 md:text-center underline">Our analysis</p>
                 <h1 className="text-xl font-bold font-serif mt-6 md:text-center md:mb-8">The work values we thrive for</h1>
                 <div className="md:flex">
@@ -43,7 +43,7 @@ const page = () =>  {
                 </div>
                 </div>
             </section>
-            <section className="bg-amber-800 md:flex md:justify-between">
+            <section className="bg-amber-800 w-full md:flex md:justify-between">
                 <div className="shadow-md p-5">
                     <p className="text-white font-bold">Frequesntly asked</p>
                     <h1 className="font-bold text-3xl text-white">Its the bridge between,<br/> services companies,<br/> and consumers</h1>
@@ -59,7 +59,7 @@ const page = () =>  {
             <div className="p-5">
                 <Image src={BackMassage} alt="backmassage" className="h-120 w-120 md:w-200 md:300"/>
             </div>
-               <div className="shadow-md p-5">
+               <div className="shadow-md p-5 w-full">
                     <p className="text-white font-bold">Frequesntly asked</p>
                     <h1 className="font-bold text-3xl text-white">Its the bridge between,<br/> services companies,<br/> and consumers</h1>
                     <p className="font-extralight text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero obcaecati<br/> ducimus doloribus asperiores, nemo corrupti possimus suscipit dicta<br/> fuga itaque animi reiciendis, impedit recusandae odio? <br/> Reprehenderit sapiente ab fuga mollitia.</p>
@@ -82,7 +82,7 @@ const page = () =>  {
                 </div>
                 
             </section>
-             <footer className='bg-[#5317A6] px-4 md:px-16 lg:px-28'>
+             <footer className='bg-[#5317A6] px-4 md:px-16 w-full lg:px-28'>
                           <div className='grid grid-cols-1  md:grid-cols-3 gap-7'>
                           <div>
                             <h2 className='text-xl text-black underline font-bold'>About us</h2>

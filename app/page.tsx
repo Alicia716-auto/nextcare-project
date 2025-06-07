@@ -19,8 +19,8 @@ const page = () => {
   return (
     <div className='bg-[rgb(244,194,195)]'>
     <section className='bg-[#F3E5C3] md:flex md:justify-between '>
-      <p className=' text-white font-sans p-2  text-2xl '>Discover your perfect look</p>
-      <p className=' text-black font-sans p-2 text-5xl md:p-5 '>Unlock your true <br/>
+      <p className=' text-black font-sans p-2  text-2xl '>Discover your perfect look</p>
+      <p className=' text-black font-serif p-2 text-5xl md:p-5 '>Unlock your true <br/>
        Beauty with our <br/> Equisite Wigs with Elegant satisfaction</p>
     
        
@@ -72,13 +72,13 @@ const page = () => {
   <div className=''>
     <Image src={Fairmassage} alt='fairmassage' className='w-120 h-120 md:w-250 md:h-200 p-3'/>
   </div>
-  <div className='border p-5 w-120 h-120 bg-[#120A8F] md:w-200 md:h-200 rounded-2xl'>
+  <div className='border p-5 w-100 h-120 bg-[#120A8F] md:w-200 md:h-200 rounded-2xl'>
     <h1 className='text-xl font-sans md:text-5xl md:text-center md:mt-5 underline'>Facial Care treatment </h1>
-    <p className='font-extralight font-sans text-3xl p-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus animi<br/> non sunt, beatae in deleniti nesciunt error quas hic minima velit quo<br/> voluptas eos id recusandae, voluptates quam, quis modi.</p>
+    <p className='font-extralight  font-sans text-3xl p-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus animi<br/> non sunt, beatae in deleniti nesciunt error quas hic minima velit quo<br/> voluptas eos id recusandae, voluptates quam, quis modi.</p>
   </div>
 </div>
 <div className='p-5 md:flex md:space-x-4'>
-     <div className='border p-5 w-120 h-120 bg-[#545D50] md:w-200 md:h-150 rounded-2xl '>
+     <div className='border p-5 w-100 h-120 bg-[#545D50] md:w-200 md:h-150 rounded-2xl '>
     <h1 className='text-xl font-sans md:text-5xl md:text-center md:mt-5 underline'>Facial Care treatment </h1>
     <p className='font-extralight font-sans text-3xl p-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus animi<br/> non sunt, beatae in deleniti nesciunt error quas hic minima velit quo<br/> voluptas eos id recusandae, voluptates quam, quis modi.</p>
   </div>

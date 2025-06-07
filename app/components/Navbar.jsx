@@ -33,9 +33,9 @@ const Navbar = () => {
     },[isOpen])
   return (
     <div>
-    <nav className="bg-[#4E7A8E] h-15">
+    <nav className="bg-[#4E7A8E] h-15 w-full">
         <div className="flex items-center justify-between p-2 ">
-            <h1 className=" text-3xl font-serif">Code By riven</h1>
+            <h1 className=" text-xl font-serif">Code By riven</h1>
               {!isOpen &&  (
                 <div onClick={toggleMenu} className="cursor-pointer md:hidden">
                     <HiMenu size={30} />
@@ -47,7 +47,7 @@ const Navbar = () => {
                 </div>
             )}
             {isOpen ? (
-                <div className="bg-gray-800 flex justify-center items-center fixed flex-col gap-10 duration-300 ease-in w-screen left-0 top-0 z-10 min-h-screen overflow-y-hidden">
+                <div className="bg-gray-800 flex justify-center items-center h-full fixed flex-col gap-10 duration-300 ease-in w-screen left-0 top-0 z-10 min-h-screen overflow-x-hidden overflow-y-hidden ">
                     <Link href="/" className="text-2xl font-bold hover:text-green-100">Home</Link>
                  <Link href="/about/contact/services" className="text-2xl font-bold hover:text-green-100">Services</Link>
                   <Link href="/about/contact/services/portfolio" className="text-2xl font-bold hover:text-green-100">Portfolio</Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
                 </div>
 
             ): (
-                <div className="bg-gray-800 flex fixed justify-center items-center flex--col gap-10 duration-300 ease-in w-screen left-[-150%] top-0 z-10 min-h-screen overflow-y-hidden">
+                <div className="bg-gray-800 flex fixed justify-center items-center flex--col h-full gap-10 duration-300 ease-in w-screen left-[-150%] top-0 z-10 min-h-screen overflow-x-hidden overflow-y-hidden">
 
                 </div>
 
@@ -70,7 +70,7 @@ const Navbar = () => {
                   <Link className="text-xl font-extralight font-sans" href="/about/contact/services/portfolio">Blog</Link>
                    <Link className="text-xl font-extralight font-sans" href="/about/contact">Contact</Link>
             </ul>
-            <div className="space-x-4 font-bold pr-10 ">
+            <div className="space-x-4 font-bold flex space-between justify-end text-left pr-10 ">
                 <button className="bg-[#D6CFe0] rounded-md py-2 px-5">Sign up</button>
                  <button className="bg-[#D6CFE0] rounded-md py-2 px-5">Login</button>
             </div>

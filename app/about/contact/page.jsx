@@ -13,13 +13,13 @@ import Link from "next/link"
 const page = () =>  {
 
     return(
-        <div className="bg-[#F4F1F8]">
-            <section className="bg-[#7A003F] h-55">
+        <div className="bg-[#F4F1F8] w-full">
+            <section className="bg-[#7A003F] w-full h-55">
                 <p className="text-white font-light font-serif p-5 text-center ">Get in touch with us</p>
                 <h1 className="text-3xl text-white font-serif font-bold p-2 text-center">We are ready to assist<br/> you 24/7</h1>
             </section>
             <div className="md:flex md:justify-between">
-                <div className="w-120 h-120 rounded-3xl overflow-hidden shadow-lgborder border-pink-200 p-5 pr-8 ">
+                <div className="w-120 h-120 rounded-3xl overflow-hidden shadow-lgborder border-pink-200 p-5 pr-4 ">
                     <Image src={Facewash} alt="facewash" className="w-full h-full object-cover"/>
                 </div>
                 <div className="shadow-lg p-5 ">
@@ -44,47 +44,47 @@ const page = () =>  {
                         </div>
                 </div>
             </div>
-            <section className="h-100 bg-blue-700">
-                <div>
+            <section className="h-100 bg-blue-700 mx-auto w-full justify-between">
+                <div className="mx-auto mt-4 w-full max-w-md">
               <div className="shadow-lg max-w-md mx-auto border-amber-600 rounded mt-5">
-                <div className="r">
+                <div className="">
                 <p className="text-xl font-serif text-white mb-2">Enter your Name:</p>
                 <input type="text"
                  placeholder="Please enter your name pease"
-                  className="border border-black w-80 h-8 rounded"/>
+                  className="border border-black w-full h-8 rounded"/>
               </div>
                <div>
                 <p className="text-xl font-serif text-white mb-2">Enter your Email:</p>
                 <input type="text"
                  placeholder="Please enter your email pease"
-                  className="border border-black w-80 h-8 rounded"/>
+                  className="border border-black w-full h-8 rounded"/>
               </div>
                <div>
                 <p className="text-xl font-serif text-white mb-2">Enter your Phone:</p>
                 <input type="text"
                  placeholder="Please enter your Phone pease"
-                  className="border border-black w-80 h-8 rounded"/>
+                  className="border border-black w-full h-8 rounded"/>
               </div>
                <div>
                 <p className="text-xl font-serif text-white mb-2">Service you need:</p>
                 <input type="text"
                  placeholder="Please enter your email pease"
-                  className="border border-black w-80 h-8 rounded"/>
+                  className="border border-black w-full h-8 rounded"/>
               </div>
                <div>
                 <p className="text-xl font-serif text-white mb-2">Enter your Name:</p>
                 <input type="text"
                  placeholder="Please enter your email pease"
-                  className="border border-black w-80 h-8 rounded"/>
+                  className="border border-black w-full h-8 rounded"/>
               </div>
-              <div className=" font-bold pr-45  p-4 text-center ">
-                 <button className="bg-[#D6CFE0] rounded-md py-2 px-5 w-40">Submit</button>
+              <div className=" font-bold pl-2  p-4 text-center ">
+                 <button className="bg-[#D6CFE0] rounded-md py-2 text-center px-5 w-40">Submit</button>
             </div>
               </div>
               </div>
 
             </section>
-            <footer className='bg-[#5317A6] px-4 md:px-16 lg:px-28'>
+            <footer className='bg-[#5317A6] w-full px-4 md:px-16 lg:px-28'>
               <div className='grid grid-cols-1  md:grid-cols-3 gap-7'>
               <div>
                 <h2 className='text-xl text-black underline font-bold'>About us</h2>
