@@ -8,6 +8,13 @@ import {IoLogoInstagram} from "react-icons/io"
 import { FaSquareXTwitter } from 'react-icons/fa6';
 import Link from "next/link"
 
+export const generateMetadata = () => {
+  return {
+    title: "Contact page",
+    description:"Contact page"
+  }
+}
+
 
 
 const page = () =>  {
@@ -18,11 +25,11 @@ const page = () =>  {
                 <p className="text-white font-light font-serif p-5 text-center ">Get in touch with us</p>
                 <h1 className="text-3xl text-white font-serif font-bold p-2 text-center">We are ready to assist<br/> you 24/7</h1>
             </section>
-            <div className="md:flex md:justify-between">
-                <div className="w-120 h-120 rounded-3xl overflow-hidden shadow-lgborder border-pink-200 p-5 pr-4 ">
-                    <Image src={Facewash} alt="facewash" className="w-full h-full object-cover"/>
+            <div className="md:flex md:justify-between md:space-x-4">
+                <div className="w-120 h-125 rounded-3xl overflow-hidden shadow-md border border-pink-300 p-2 mt-5 mb-3   ">
+                    <Image src={Facewash} alt="facewash" className="w-120 h-110 pr-2 object-cover md:p-3 md:mb-3 "/>
                 </div>
-                <div className="shadow-lg p-5 ">
+                <div className="shadow-lg p-5 border border-pink-300 rounded-3xl mt-5 ">
                     <p className="text-sans font-bold">Get in touch</p>
                     <h1 className="text-4xl font-bold">We are here to help <br/> you always....</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima<br/> quis nam totam sapiente provident! Nostrum nesciunt tenetur reprehende,<br/> molestiae minima eligendi repellat.</p>
@@ -45,7 +52,7 @@ const page = () =>  {
                 </div>
             </div>
             <section className="h-100 bg-blue-700 mx-auto w-full justify-between">
-                <div className="mx-auto mt-4 w-full max-w-md">
+                <div className="mx-auto mt-4 w-full max-w-md ">
               <div className="shadow-lg max-w-md mx-auto border-amber-600 rounded mt-5">
                 <div className="">
                 <p className="text-xl font-serif text-white mb-2">Enter your Name:</p>

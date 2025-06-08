@@ -10,6 +10,14 @@ import { FaSquareXTwitter } from 'react-icons/fa6';
 import Link from "next/link"
 
 
+export const generateMetadata = () => {
+  return {
+    title: "Services",
+    description:"Services"
+  }
+}
+
+
 
 const page = () =>  {
 

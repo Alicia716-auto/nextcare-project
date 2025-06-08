@@ -5,6 +5,10 @@ import {HiMenu} from 'react-icons/hi'
 import {IoClose} from "react-icons/io5"
 import { useEffect } from "react";
 import React from 'react'
+import {IoMdHome} from "react-icons/io"
+import {IoPersonSharp} from "react-icons/io5"
+import {FiPhoneCall} from "react-icons/fi"
+import { IoBagCheck } from "react-icons/io5";
 
 
 const Navbar = () => {
@@ -35,9 +39,9 @@ const Navbar = () => {
     <div>
     <nav className="bg-[#4E7A8E] h-20 w-full">
         <div className="flex items-center justify-between p-2 ">
-            <h1 className=" text-sm font-serif">@Codebyriven</h1>
+            <h1 className=" text-sm font-medium mt-2 font-sans">@Codebyriven</h1>
               {!isOpen &&  (
-                <div onClick={toggleMenu} className="cursor-pointer md:hidden">
+                <div onClick={toggleMenu} className="cursor-pointer mt-2.5 pl-3.5 md:hidden">
                     <HiMenu size={30} />
                 </div>
             )}
@@ -47,13 +51,12 @@ const Navbar = () => {
                 </div>
             )}
             {isOpen ? (
-                <div className="bg-gray-800 flex justify-center items-center h-full fixed flex-col gap-10 duration-300 ease-in w-screen left-0 top-0 z-10 min-h-screen overflow-x-hidden overflow-y-hidden ">
-                    <Link href="/" className="text-2xl font-bold hover:text-green-100">Home</Link>
-                 <Link href="/about/contact/services" className="text-2xl font-bold hover:text-green-100">Services</Link>
-                  <Link href="/about/contact/services/portfolio" className="text-2xl font-bold hover:text-green-100">Portfolio</Link>
-                   <Link href="/about/contact" className="text-2xl font-bold hover:text-green-100">Contact</Link>
-                     <button className="text-sm bg-blue-500 font-bold rounded  px-4 py-2">Sign in</button>
-                <button className="text-sm bg-blue-500 font-bold rounded  px-4 py-2">Sign Up</button>
+                <div className="bg-[#4E7A8E] flex justify-center pb-50 items-center h-full fixed flex-col gap-10 duration-300 ease-in w-25 left-0 top-0 z-10 min-h-screen overflow-x-hidden overflow-y-hidden ">
+                    <Link href="/" className="text-xl font-bold hover:text-green-100">Home <IoMdHome className="text-5xl md:hidden pl-3 text-blue-200"/></Link>
+                 <Link href="/about/contact/services" className="text-xl font-bold hover:text-green-100">Services <IoPersonSharp className="text-5xl md:hidden pl-3 text-blue-200"/></Link>
+                  <Link href="/about/contact/services/portfolio" className="text-xl font-bold hover:text-green-100">Portfolio<IoBagCheck className="text-5xl md:hidden pl-3 text-blue-200"/></Link>
+                   <Link href="/about/contact" className="text-xl font-bold hover:text-green-100">Contact<FiPhoneCall className="text-5xl md:hidden pl-3 text-blue-200"/></Link>
+                    
 
                 </div>
 
@@ -70,9 +73,9 @@ const Navbar = () => {
                   <Link className="text-xl font-extralight font-sans" href="/about/contact/services/portfolio">Blog</Link>
                    <Link className="text-xl font-extralight font-sans" href="/about/contact">Contact</Link>
             </ul>
-            <div className="space-x-4 font-bold flex space-between justify-end text-left pr-10 ">
-                <button className="bg-[#D6CFe0] rounded-md py-2 m-2 px-4">Sign up</button>
-                 <button className="bg-[#D6CFE0] rounded-md m-2 py-2 px-4">Login</button>
+            <div className="space-x-2 font-bold flex-shrink-0 mt-2   space-between justify-end text-left pr-10 pl-8 ">
+                <button className="bg-[#D6CFe0]  rounded-md text-sm py-1 m-2 px-2">Sign up</button>
+                 <button className="bg-[#D6CFE0]  rounded-md text-sm m-2 py-1 px-2">Login</button>
             </div>
         </div>
     </nav>

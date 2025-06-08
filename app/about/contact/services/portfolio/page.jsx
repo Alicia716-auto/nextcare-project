@@ -11,6 +11,13 @@ import {IoLogoInstagram} from "react-icons/io"
 import { FaSquareXTwitter } from 'react-icons/fa6';
 import Link from "next/link"
 
+export const generateMetadata = () => {
+  return {
+    title: "info",
+    description:"info"
+  }
+}
+
 
 const page = () =>  {
 
